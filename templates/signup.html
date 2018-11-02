@@ -2,6 +2,7 @@
 <html>
   <head>
     <title> SIGNUP! </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='signup.css')  }}">
 
     <h1> SIGN UP PAGE </h1>
 
@@ -9,7 +10,9 @@
 
   <body>
     <br> <br>
-    {{ message }}
+    <p>
+      {{ message }}
+      </p>
     <br> <br>
     <form action = "/signupauth" method = "POST">
 
